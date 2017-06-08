@@ -3,17 +3,17 @@ import React, { Component } from 'react';
 class List extends Component {
 
     itemOnClick(item) {
-        alert(`You have selected file: ${item.name}`);
+        alert(`You have selected: ${item.name}`);
     }
 
     renderItem(item) {
 
         const typeText = item.isFolder ? 'Folder' : 'File';
-        const onClick = item.isFolder ? () => this.itemOnClick(item) : () => {};
+        const onClick = () => this.itemOnClick(item);
 
         return (
             <li key={item.id} onClick={onClick}>
-                { `${item.name}[${typeText}]`}
+                { `${item.name}[${typeText}]` }
             </li>
         );
     }
