@@ -1,9 +1,13 @@
 import { combineReducers } from 'redux';
 
+import users from './Users';
+import oneDrive from './OneDrive';
+
 function makeRootReducer() {
 
     const rootReducer = combineReducers({
-        // TODO: Add reducers
+        users,
+        oneDrive
     });
 
     return rootReducer;
