@@ -15,8 +15,6 @@ function onAuthComplete(token, expiry, authWindow) {
 }
 
 function onAuthCallback() {
-    console.log('here');
-    console.log(window.location);
     var authInfo = getAuthInfoFromUrl();
 
     if ( !authInfo ) {
