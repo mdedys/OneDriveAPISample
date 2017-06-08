@@ -41,7 +41,7 @@ function challengeForAuth() {
         const appInfo = {
             clientId: '79878dd4-12f4-48ff-9267-904c4ef43624',
             scopes: 'user.read files.read files.read.all files.readwrite.all',
-            redirectUri: 'http://mdedys.github.io/OneDriveAPISample/callback.html',
+            redirectUri: 'https://mdedys.github.io/OneDriveAPISample/callback.html',
             authServiceUri: 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
         };
 
